@@ -27,3 +27,47 @@ drive.mount('/content/drive')
 ```sh
 pip install -r requirements.txt
 ```
+
+### Part 1: Domain Generalisation via Ensemble Learning
+Domain generalisation is a sub-field of transfer learning that aims to bridge the gap between two different domains in the absence of any knowledge about the target domain. Deep learning models for medical image analysis easily suffer from distribution shifts caused by dataset artifacts bias, camera variations, differences in the imaging station, etc., leading to unreliable diagnoses in real-world clinical settings. Domain generalization (DG) methods, which aim to train models on multiple domains to perform well on unseen domains, offer a promising direction to solve the problem. In this project, we built an ensemble model from base deep learning models that have been trained on different datasets from ISIC to introduce diversity into the model.
+
+### Part 1: Data
+2016
+- The 2016 ISIC dataset has 900 training images and 379 testing images, from which we split it into 862 training images, and 322 validation images, and 379 testing images.
+- There are two labels:
+  - Melanoma (malignant)
+  - Benign
+
+2017
+- The 2017 ISIC dataset has 2000 training images, 150 validation images, and 600 testing images. There are two labels:
+  – Melanoma (malignant)
+  - Seborrheic keratosis (benign)
+- We trained the AlexNet model on this dataset for 20 epochs, with an SGD optimiser that has a learning rate of 0.01, and a binary CE loss.
+
+2018
+- The 2018 ISIC dataset has 10015 training images, 193 validation images, and 1512 testing images.
+- There are seven labels:
+  - Melanoma (malignant)
+  - Nevus (benign)
+  - Basal cell carcinoma (malignant)
+  - Actinic keratosis (malignant)
+  - Benign keratosis (benign)
+  - Dermatofibroma (benign)
+  - Vascular lesion (which could be both)
+- We trained the VGG19 model on this dataset for 20 epochs, with an SGD optimiser that has a learning rate of 0.01, and a binary CE loss.
+
+2019
+- The 2019 ISIC dataset has 20148 training images, from which we split it into 15198 training images, 5066 validation images, and 5067 testing images.
+- There are nine labels:
+  - Melanoma (malignant)
+  - Nevus (benign)
+  - Basal cell carcinoma (malignant)
+  - Actinic keratosis (malignant)
+  - Benign keratosis (benign)
+  - Dermatofibroma (benign)
+  - Vascular lesion (which could be both)
+  - Squamous cell carcinoma (malignant)
+  - None of the others (which could be both)
+- We trained the ResNet50 model on this dataset for 20 epochs, with an SGD optimiser that has a learning rate of 0.01, and a binary CE loss.
+
+### Part 1: Getting Started
