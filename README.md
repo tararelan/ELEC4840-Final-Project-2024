@@ -71,3 +71,16 @@ Domain generalisation is a sub-field of transfer learning that aims to bridge th
 - We trained the ResNet50 model on this dataset for 20 epochs, with an SGD optimiser that has a learning rate of 0.01, and a binary CE loss.
 
 ### Part 1: Getting Started
+- Download the relevant datasets from ISIC, and then sort the data into the following format:
+```
+root: train/val/test
+    class_a
+        a1.png
+        a2.png
+        ...
+    class_b
+        b1.png
+        b2.png
+        ...
+```
+- The code for this is already given in the Jupyter notebook.
