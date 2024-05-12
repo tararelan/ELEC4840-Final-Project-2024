@@ -1,1 +1,9 @@
-
+matplotlib==3.7.1
+matplotlib-inline==0.1.6
+numpy==1.23.5
+pandas==2.0.0
+scikit-learn==1.2.2
+torch==2.0.1
+torch-summary==1.4.5
+torchvision==0.15.2
+tqdm==4.65.0
