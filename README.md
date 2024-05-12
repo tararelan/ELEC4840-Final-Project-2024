@@ -37,6 +37,8 @@ Domain generalisation is a sub-field of transfer learning that aims to bridge th
 - There are two labels:
   - Melanoma (malignant)
   - Benign
+- We trained the ResNet50 model on this dataset for 20 epochs, with an SGD optimiser that has a learning rate of 0.01, and a binary CE loss.
+- We also applied the ensemble model on the entire 2016 dataset.
 
 2017
 - The 2017 ISIC dataset ([accessed here][2]) has 2000 training images, 150 validation images, and 600 testing images. There are two labels:
