@@ -1,6 +1,6 @@
 ## ELEC4840: Artificial Intelligence for Medical Imaging Analysis
 ### Final Project
-## Skin Lesion Classification using Domain Generalisation and Contrastive Learning
+# Skin Lesion Classification using Domain Generalisation and Contrastive Learning
 ### Tara Relan (20716928), Yudan Zhao (20761911)
 
 ### Table of Contents
